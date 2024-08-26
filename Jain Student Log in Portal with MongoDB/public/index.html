@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="jainlogo.jpg" alt="Jain University Logo">
+        <h2>Student Login</h2>
+        <form id="login-form" class="login-form" action="/api/auth/login" method="POST">
+            <label for="usn">USN</label>
+            <input type="text" id="usn" name="usn" placeholder="Enter your USN">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
